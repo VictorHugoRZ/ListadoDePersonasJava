@@ -31,7 +31,7 @@ public class ListadoPersonas {
         System.out.print("¿Que opcion quiere utilizar? ");
     }
 
-    //Funcion para evaluar casos
+    //Funcion para evaluar los casos, retorna un booleano.
     private static boolean operacionLista(List<Persona> personas, Scanner scanner) {
         var opcion = Integer.parseInt(scanner.nextLine());
         var salir = false;

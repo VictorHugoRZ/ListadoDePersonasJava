@@ -1,4 +1,4 @@
-//Creamos nuestra clase Persona y definimos sus atributos junto con el tipo de dato de cada uno
+//Creamos nuestra clase Persona y definimos sus atributos junto con el tipo de dato de cada uno.
 public class Persona {
     private int id;
     private String nombre;
