@@ -63,6 +63,15 @@ public class Persona {
         this.email = email;
     }
 
+    //@Override indica que este metodo esta sobrescribiendo el metodo toString() de la clase base Object.
+    //Es una anotacion que ayuda a prevenir errores de sintaxis al asegurarse de que realmente estas sobrescribiendo
+    //un metodo existente en la superclase.
+    //------------------------------------------------------------------------------------------------------------------
+    //Dentro del metodo toString(), se construye una cadena de texto usando la concatenacion de multiples partes.
+    //Esta cadena sigue el formato "Persona{id=valorID, nombre='valorNombre', tel='valorTel', email='valorEmail'}".
+    //------------------------------------------------------------------------------------------------------------------
+    //Cada parte de la cadena comienza con el nombre del atributo seguido por su valor correspondiente en el objeto
+    //Persona, utilizando el operador + para concatenar valores de atributos y texto fijo.
     @Override
     public String toString() {
         return "Persona{" +
@@ -74,6 +83,8 @@ public class Persona {
     }
 
     //Creamos la funcion Main para utilizar nuestra clase
+    //Esto solo en esta clase de Java(archivo) ya que usaremos esta clase sin esta ultima funcion en la clase
+    //ListadoPersonas.java
     public static void main(String[] args) {
         Persona persona1 = new Persona("Victor Ramirez", "(55) 1716 8649", "v.zamoravictor@gmail.com");
         System.out.println(persona1); //Persona@6acbcfc0 (Referencia en memoria)
